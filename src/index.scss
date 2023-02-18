@@ -1,0 +1,233 @@
+:root {
+  --color-yellow: #ffd400;
+  --color-purple: #fd20ef;
+  --color-pink: #ff2e97;
+  --color-pink-hover: #ff0073;
+  --bcg-color: #030d22;
+  --bcg-color-light: #0e0952;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bcg-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.Header {
+  header {
+    display: flex;
+    padding: 19px 50px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bcg-color-light);
+    border-bottom: 3px solid var(--color-pink);
+    box-shadow: 0 0 20px var(--color-pink);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border-bottom: 3px solid var(--color-yellow);
+      box-shadow: 0 0 20px var(--color-yellow);
+    }
+
+    .logo-box {
+      .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+          max-width: 20%;
+        }
+
+        &:hover {
+          .logo-bottom {
+            color: var(--color-yellow);
+          }
+
+          .logo-text {
+            color: var(--color-pink-hover);
+
+            span {
+              color: var(--color-yellow);
+            }
+          }
+        }
+
+        .logo-text {
+          height: 29px;
+          font-size: 27px;
+          font-weight: 900;
+          letter-spacing: 4px;
+          color: var(--color-pink);
+          font-family: "Cutive Mono";
+          transition: all 0.2s ease-in-out;
+        }
+
+        p {
+          font-size: 17px;
+          font-weight: 900;
+          letter-spacing: -0.5px;
+          color: var(--color-pink);
+          font-family: "Cutive Mono";
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+
+      .nav-button {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 350px;
+
+        .link {
+          display: flex;
+          font-size: 1.7vmin;
+          padding: 0.5em 1.3em;
+          background: #fff;
+          color: #4a5568;
+          border: 0px solid #a0aec0;
+          margin: 0.1em;
+          transition: background 0.2s ease, color 0.2s ease,
+            box-shadow 0.2s ease, transform 0.2s ease;
+          box-shadow: 0 0 0 #bee3f8;
+          transform: translateY(0);
+        }
+      }
+
+      .nav-button:hover li i {
+        color: #cbd5e0;
+      }
+
+      .nav-button:hover li .link:hover i {
+        color: var(--color-yellow);
+        transform: rotate(-10deg);
+      }
+
+      .home:first-of-type {
+        border-radius: 0.5em 0 0 0.5em;
+      }
+
+      .link i {
+        color: #a0aec0;
+        margin-right: 0.3em;
+        transition: all 0.2s ease-out;
+      }
+
+      .nav-button:hover .link {
+        color: #a0aec0;
+      }
+
+      .nav-button:hover .home:hover {
+        background: var(--color-pink);
+        color: var(--bcg-color-light);
+        box-shadow: 0 0 2em 0 var(--color-pink);
+        transform: translateY(-0.2em);
+      }
+
+      .nav-button:hover .project:hover {
+        background: var(--color-pink);
+        color: var(--bcg-color-light);
+        box-shadow: 0 0 2em 0 var(--color-pink);
+        transform: translateY(-0.2em);
+      }
+
+      .nav-button:hover .about:hover {
+        background: var(--color-pink);
+        color: var(--bcg-color-light);
+        box-shadow: 0 0 2em 0 var(--color-pink);
+        transform: translateY(-0.2em);
+      }
+
+      //  Call -- Telegram -- Instagram //
+
+      .multi-button {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          display: flex;
+          font-size: 1.7vmin;
+          padding: 0.5em 1.3em;
+          background: #fff;
+          color: #4a5568;
+          border: 0px solid #a0aec0;
+          margin: 0.1em;
+          transition: background 0.2s ease, color 0.2s ease,
+            box-shadow 0.2s ease, transform 0.2s ease;
+          box-shadow: 0 0 0 #bee3f8;
+          transform: translateY(0);
+        }
+      }
+
+      .multi-button:hover a i {
+        color: #cbd5e0;
+      }
+
+      .multi-button:hover a:hover i {
+        color: var(--color-yellow);
+        transform: rotate(-10deg);
+      }
+
+      .instagram:last-of-type {
+        border-radius: 0 0.5em 0.5em 0;
+      }
+
+      a i {
+        color: #a0aec0;
+        margin-right: 0.3em;
+        transition: all 0.2s ease-out;
+      }
+
+      .multi-button:hover a {
+        color: #a0aec0;
+      }
+
+      .multi-button:hover .phone:hover {
+        background: green;
+        color: #fff;
+        box-shadow: 0 0 2em 0 green;
+        transform: translateY(-0.2em);
+      }
+
+      .multi-button:hover .instagram:hover {
+        background: #d53f8c;
+        color: #fff;
+        box-shadow: 0 0 2em 0 #d53f8c;
+        transform: translateY(-0.2em);
+      }
+
+      .multi-button:hover .telegram:hover {
+        background: rgb(0, 132, 255);
+        color: #fff;
+        box-shadow: 0 0 2em 0 rgb(0, 132, 255);
+        transform: translateY(-0.2em);
+      }
+    }
+  }
+}
