@@ -1,12 +1,13 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import Header from "../Components/Header";
+import Projects from "../Components/Projects";
 
 const Home = () => {
   return (
     <div>
+      <Header />
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/#Projects" element={<Projects />} />
       </Routes>
     </div>
   );

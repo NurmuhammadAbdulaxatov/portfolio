@@ -26,10 +26,10 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link className="link project">
+                <a className="link project" href="#Projects">
                   <i className="fa-solid fa-layer-group"></i>
                   Projects
-                </Link>
+                </a>
               </li>
               <li>
                 <Link className="link about">
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="portion">
             <h2>
               <span>WEB</span>
-              <span>MOMO</span>
+              <span>BER</span>
             </h2>
           </div>
         </section>
