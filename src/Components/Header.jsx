@@ -8,7 +8,6 @@ const Header = () => {
         <header>
           <div className="logo-box">
             <Link className="logo">
-              <img src="/logo.png" alt="logo" />
               <div>
                 <p className="logo-text">
                   W.T.<span>F</span>
@@ -53,6 +52,15 @@ const Header = () => {
             </div>
           </nav>
         </header>
+
+        <section>
+          <div className="portion">
+            <h2>
+              <span>WEB</span>
+              <span>MOMO</span>
+            </h2>
+          </div>
+        </section>
       </div>
     </div>
   );

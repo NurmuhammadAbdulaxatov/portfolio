@@ -1,0 +1,48 @@
+@media (max-width: 1207px) {
+  .Header {
+    header {
+      display: flex;
+      padding: 19px 50px;
+      align-items: center;
+      justify-content: space-around;
+      background-color: var(--bcg-color-light);
+      border-bottom: 3px solid var(--color-pink);
+      box-shadow: 0 0 20px var(--color-pink);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        border-bottom: 3px solid var(--color-yellow);
+        box-shadow: 0 0 20px var(--color-yellow);
+      }
+
+      .logo-box {
+        .logo {
+          display: flex;
+          align-items: center;
+
+          .logo-text {
+            height: 29px;
+            font-size: 23px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            color: var(--color-pink);
+            font-family: "Cutive Mono";
+            transition: all 0.2s ease-in-out;
+          }
+
+          .logo-bottom {
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            color: var(--color-pink);
+            font-family: "Cutive Mono";
+            transition: all 0.2s ease-in-out;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+

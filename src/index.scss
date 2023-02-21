@@ -39,14 +39,16 @@ ul {
 
 .Header {
   header {
+    top: 20;
     display: flex;
+    position: sticky;
     padding: 19px 50px;
     align-items: center;
     justify-content: space-around;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 20px var(--color-pink);
     background-color: var(--bcg-color-light);
     border-bottom: 3px solid var(--color-pink);
-    box-shadow: 0 0 20px var(--color-pink);
-    transition: all 0.2s ease-in-out;
 
     &:hover {
       border-bottom: 3px solid var(--color-yellow);
@@ -103,7 +105,7 @@ ul {
       .nav-button {
         display: flex;
         justify-content: space-between;
-        margin-left: 350px;
+        margin-left: 420px;
 
         .link {
           display: flex;
@@ -230,4 +232,65 @@ ul {
       }
     }
   }
+
+  section {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .portion {
+      h2 {
+        position: relative;
+        font-size: 9em;
+        color: #0e3742;
+        text-align: center;
+        cursor: default;
+        -webkit-box-reflect: below -42px linear-gradient(transparent, #0004);
+
+        span {
+          animation: animate 7s linear infinite;
+          margin: 0 5px;
+        }
+
+        span:nth-child(even) {
+          animation-delay: 0.4s;
+        }
+
+        @keyframes animate {
+          0%,
+          18%,
+          20%,
+          50.1%,
+          60%,
+          65.1%,
+          80%,
+          90.1%,
+          92% {
+            // #0e3742
+            color: var(--color-pink);
+            text-shadow: none;
+          }
+          18.1%,
+          20.1%,
+          30%,
+          50%,
+          60.1%,
+          65%,
+          80.1%,
+          90%,
+          92.1%,
+          100% {
+            color: #fff;
+            text-shadow: 0 0 10px var(--color-yellow),
+              0 0 20px var(--color-yellow), 0 0 40px var(--color-yellow),
+              0 0 80px var(--color-yellow), 0 0 160px var(--color-yellow),
+              0 0 400px var(--color-yellow);
+          }
+        }
+      }
+    }
+  }
 }
+
+@import "_responcive.scss";
